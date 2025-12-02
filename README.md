@@ -13,6 +13,17 @@ A simple project that takes a URL input and generates a QR code image instantly.
 
 ---
 
+## 🛠️ Tech Used
+
+- Node.js
+- Express.js
+- qr-image
+- body-parser
+- fs (File System)
+- path
+- HTML, CSS, JavaScript (Frontend)
+---
+
 ## 🛠️ Installation
 
 ### 1. Clone the repository
