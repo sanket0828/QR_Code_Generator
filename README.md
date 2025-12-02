@@ -1,91 +1,46 @@
-📷 QR Code Generator
+# 📷 QR Code Generator
 
-A simple Node.js project that takes a URL input, generates its QR code, saves the details to a backend data/ folder, and displays the QR code instantly on the frontend.
+A simple project that takes a URL input and generates a QR code image instantly. The generated QR code is displayed on the same page, and the entered URL is saved to a local text file.
 
-✨ Features
+---
 
-🔗 Generate a QR code from any URL
+## ✨ Features
 
-🖼️ Display the QR code instantly on the page
+- Enter any URL and generate its QR code
+- Displays the QR code image on the same page
+- Saves the entered URL to a `message.txt` file
+- Clean and responsive UI with basic styling
 
-📝 Store the URL in data/message.txt
+---
 
-🗂️ Store the generated QR image in data/qr_img.png
+##🛠️ Tech Used
 
-🚀 Lightweight Express backend + clean frontend UI
+- Node.js
+- Express.js
+- qr-image
+- body-parser
+- fs (File System)
+- path
+- HTML, CSS, JavaScript (Frontend)
+---
 
-❌ Backend files are NOT exposed publicly (safer structure)
+## 🛠️ Installation
 
-🧰 Tech Stack
-
-Node.js – JavaScript runtime
-
-Express.js – Web server
-
-qr-image – QR code generator
-
-body-parser – Request parsing
-
-fs – File system handling
-
-path – File path resolver
-
-HTML/CSS/JS – Frontend UI
-
-ES Modules – Modern import syntax
-
-📂 Project Structure
-project/
-│── index.js
-│── package.json
-│
-├── data/                 ← stores backend files (NOT public)
-│   ├── message.txt
-│   └── qr_img.png
-│
-└── public/               ← served to browser
-    ├── index.html
-    ├── style.css
-
-🛠️ Installation
-1. Clone the repository
+### 1. Clone the repository
+```bash
 git clone https://github.com/your-username/qr-code-generator.git
 cd qr-code-generator
-
-2. Install dependencies
+```
+### 2. Install dependencies
+```bash
 npm install
-
-▶️ Run the Server
+```
+ ### 3. ▶️ How to Run
+ ```bash
 node index.js
+```
 
-
-Then open your browser and visit:
-
+### 4. Then open your browser and visit:
+```bash
 http://localhost:3000
-
-🔌 API Endpoints
-POST /generate
-
-Generates:
-
-data/message.txt → stores the URL
-
-data/qr_img.png → QR code image
-
-GET /qr
-
-Returns the generated QR image so it can be displayed in the browser.
-
-🖥️ Frontend Usage
-
-Enter any URL
-
-Click Generate
-
-The QR code will appear instantly
-
-Backend stores both QR + message in data/
-
-📜 License
-
-This project is licensed under the MIT License.
+```
