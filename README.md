@@ -13,7 +13,7 @@ A simple project that takes a URL input and generates a QR code image instantly.
 
 ---
 
-##🛠️ Tech Used
+## 🛠️ Tech Used
 
 - Node.js
 - Express.js
