@@ -31,7 +31,7 @@
       });
 
       if (response.ok) {
-        img.src = `/qr_img.png?ts=${Date.now()}`; // avoid caching
+        img.src = `/qr_img.png?ts=${Date.now()}`; 
       } else {
         alert('Failed to generate QR Code');
       }
